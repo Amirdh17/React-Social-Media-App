@@ -21,6 +21,11 @@
 
 ## Implementation Details
 ### React Router
-  The package "react-router" is instaled from npm website. In index.js, import Browser Router tag from react-router-dom and make the app component place within the Browser Router tag. In app component, import routes and route from react-router-dom, and within Routes tag, create a path for each functional component therefore we can link them to respective elements. 
+  The package "react-router" is installed from npm website. In index.js, import Browser Router tag from react-router-dom and make the app component place within the Browser Router tag. In app component, import routes and route from react-router-dom, and within Routes tag, create a path for each functional component therefore we can link them to respective elements. 
+### Context API
+  Context api is provide a simple way to pass data to components without passing the props. It can be used to share data as "global" for react components. In src folder, DataContext.js is created in Context folder. In DataContet.js file, "createContext" function is imported from "React" package and is used to create context object. Data that need to be shared globally, are put within a function expression (provider) which is exported. In App.js, all the components which need shared global data, are written within the "provider" which is imported. To use the shared data in particular component, "useContext" hook is used from React package.
 ### Axios API request
+  Axios is a popular library used to communicate with backend and api to perform the CRUD operations. In this project, fake api is created by using "json-server" package. Using axios, CRUD operation is made easy with the fake api. In src folder, Posts.js file has base url of fake api file in api folder. In DataContext.js file, Posts.js file is imported as "api" and that "api" is used to do CRUD operation using the keyword get, post, put and delete.
+### Custom Hook
+  
 
